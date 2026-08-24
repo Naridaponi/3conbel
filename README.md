@@ -1,46 +1,84 @@
-# 3conbel
-Tên dự án
+# Tên dự án
 
-Mô tả ngắn gọn về dự án và mục đích của nó.
+Mô tả ngắn gọn dự án này làm gì và giải quyết vấn đề gì.
 
-✨ Tính năng
-Tính năng 1
-Tính năng 2
-Tính năng 3
-🛠️ Công nghệ
-Công nghệ / framework 1
-Công nghệ / framework 2
-Công nghệ / database 3
-📦 Cài đặt
-git clone https://github.com/username/project.git
-cd project
+## 📌 Mục lục
+
+- [Giới thiệu](#giới-thiệu)
+- [Tính năng](#tính-năng)
+- [Cài đặt](#cài-đặt)
+- [Cách sử dụng](#cách-sử-dụng)
+- [Cấu trúc dự án](#cấu-trúc-dự-án)
+- [Công nghệ sử dụng](#công-nghệ-sử-dụng)
+- [Đóng góp](#đóng-góp)
+- [License](#license)
+
+## 📖 Giới thiệu
+
+Giải thích chi tiết hơn về dự án, mục đích và đối tượng sử dụng.
+
+## ✨ Tính năng
+
+- Tính năng 1
+- Tính năng 2
+- Tính năng 3
+
+## 🛠️ Cài đặt
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/username/project-name.git
+cd project-name
+
+2. Cài đặt dependencies
 npm install
 
-🚀 Sử dụng
+3. Chạy project
 npm run dev
 
+🚀 Cách sử dụng
+Hướng dẫn người dùng sử dụng project.
 
-Sau đó mở ứng dụng tại địa chỉ được hiển thị trong terminal.
+npm run start
 
-⚙️ Cấu hình
-
-Tạo file .env và thêm các biến môi trường cần thiết:
-
-API_URL=your_api_url
-DATABASE_URL=your_database_url
-
-📁 Cấu trúc dự án
-project/
+📂 Cấu trúc dự án
+project-name/
 ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── utils/
 ├── public/
-├── .env.example
+├── tests/
+├── .gitignore
 ├── package.json
 └── README.md
 
+💻 Công nghệ sử dụng
+React
+Node.js
+Express
+MongoDB
 🤝 Đóng góp
+Nếu muốn đóng góp cho dự án:
 
-Mọi đóng góp đều được hoan nghênh. Hãy tạo issue hoặc pull request nếu bạn muốn cải thiện dự án.
-
+Fork repository
+Tạo branch mới
+Commit thay đổi
+Tạo Pull Request
 📄 License
+Dự án được phát hành dưới MIT License.
 
-Dự án được phát hành dưới giấy phép MIT.
+
+### Cấu trúc tối thiểu
+
+Nếu project nhỏ, chỉ cần:
+
+```text
+# Tên project
+## Giới thiệu
+## Tính năng
+## Cài đặt
+## Cách sử dụng
+## Công nghệ
+## License# Nhom11
