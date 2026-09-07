@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Văn B | Senior Front-end Developer</title>
+</head>
+<body>
+
+    <!-- 
+      <header>: Khối này đóng vai trò là tiêu đề của toàn bộ trang web (masthead), thường chứa logo, tên thương hiệu và thanh điều hướng chính.
+      Lý do không dùng <div>: <header> mang ý nghĩa ngữ nghĩa (semantic) rõ ràng, giúp các trình đọc màn hình (screen readers) dễ dàng xác định phần đầu của trang, từ đó tăng cường khả năng tiếp cận (Accessibility) và giúp các công cụ tìm kiếm (SEO) hiểu cấu trúc trang tốt hơn.
+    -->
+    <header>
+        <div class="logo">Trần Văn B</div>
+        
+        <!-- 
+          <nav>: Khối này chứa danh sách các liên kết điều hướng chính của trang.
+          Lý do không dùng <div>: Dùng <nav> cho biết khu vực này chứa menu điều hướng (navigation). Trình duyệt và các công cụ hỗ trợ người khuyết tật có thể sử dụng thông tin này để cung cấp phím tắt bỏ qua (skip to content) hoặc liệt kê các liên kết quan trọng, điều mà một <div> thông thường không làm được.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills-projects">Kỹ năng & Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+      <main>: Khối này bao bọc nội dung chính, cốt lõi và độc nhất của trang web hiện tại.
+      Lý do không dùng <div>: Mỗi trang chỉ nên có duy nhất một thẻ <main> (hiển thị). Nó định nghĩa vùng nội dung trọng tâm. Các trình đọc màn hình sử dụng <main> như một cột mốc (landmark) để người dùng có thể nhảy thẳng đến nội dung chính một cách nhanh chóng, thay vì phải nghe lại phần <header> và <nav> ở mỗi trang.
+    -->
+    <main>
+
+        <!-- 
+          <section>: Khối này đại diện cho một phần nội dung độc lập mang một chủ đề cụ thể của trang, thường bắt đầu bằng một thẻ tiêu đề (heading từ h1-h6).
+          Lý do không dùng <div>: <div> chỉ là một thẻ khối chung không có ý nghĩa ngữ nghĩa, thường dùng để bọc các phần tử cho việc styling CSS. Trong khi đó, <section> gom nhóm nội dung có liên quan logic với nhau, tạo thành một outline rõ ràng cho trang web (document outline), cực kỳ có lợi cho SEO và Accessibility.
+        -->
+        <section id="about">
+            <h1>Xin chào, tôi là Trần Văn B</h1>
+            <h2>Senior Front-end Developer</h2>
+            <p>Tôi là một nhà phát triển web đam mê với hơn 5 năm kinh nghiệm trong việc xây dựng các ứng dụng web phức tạp. Tôi đặc biệt chú trọng vào hiệu suất, kiến trúc phần mềm và khả năng tiếp cận (Web Accessibility). Định hướng của tôi là tiếp tục nghiên cứu các công nghệ web mới nhất và tạo ra những sản phẩm mang lại giá trị cao cho người dùng cuối.</p>
+        </section>
+
+        <!-- 
+          <section>: Khối <section> thứ hai này nhóm các thông tin về Kỹ năng chuyên môn và các Dự án tiêu biểu thành một phần chủ đề liền mạch.
+        -->
+        <section id="skills-projects">
+            <h2>Kỹ năng & Dự án tiêu biểu</h2>
+            
+            <h3>Kỹ năng chuyên môn</h3>
+            <ul>
+                <li>HTML5 Semantic & Web Accessibility (a11y)</li>
+                <li>CSS3 (SASS, TailwindCSS, CSS Modules)</li>
+                <li>JavaScript (ES6+, TypeScript)</li>
+                <li>React, Vue.js, Next.js</li>
+                <li>Performance Optimization</li>
+            </ul>
+
+            <h3>Dự án tiêu biểu</h3>
+            <article>
+                <h4>Hệ thống Quản lý Bán hàng Đa kênh</h4>
+                <p>Một ứng dụng SPA (Single Page Application) sử dụng React và Redux, giúp hàng ngàn cửa hàng đồng bộ tồn kho thời gian thực.</p>
+            </article>
+            <article>
+                <h4>Nền tảng Học trực tuyến (E-Learning)</h4>
+                <p>Phát triển giao diện tương tác cao với Vue.js, tích hợp video streaming và hệ thống bài tập trắc nghiệm, hỗ trợ chuẩn WCAG 2.1 AA.</p>
+            </article>
+        </section>
+
+        <!-- 
+          <section>: Khối <section> thứ ba tập trung riêng vào chủ đề liên hệ và kêu gọi hành động (CTA), kết thúc phần nội dung chính một cách trọn vẹn.
+        -->
+        <section id="contact">
+            <h2>Hãy làm việc cùng nhau!</h2>
+            <p>Nếu bạn có một ý tưởng tuyệt vời hoặc cần một chuyên gia Front-end cho dự án của mình, đừng ngần ngại liên hệ với tôi.</p>
+            <ul>
+                <li>Email: tranvanb.dev@example.com</li>
+                <li>Số điện thoại: 0123 456 789</li>
+            </ul>
+            <form action="#" method="POST">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email của bạn:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 
+      <footer>: Khối này đóng vai trò là chân trang, chứa các thông tin như bản quyền, tác giả, liên kết đến các trang mạng xã hội, hoặc các liên kết pháp lý (terms, privacy).
+      Lý do không dùng <div>: Việc sử dụng <footer> giúp đánh dấu điểm kết thúc của tài liệu hoặc của một <section>. Tương tự như <header> và <main>, <footer> cung cấp một landmark ngữ nghĩa rõ ràng, giúp các thiết bị hỗ trợ dễ dàng nhận biết và điều hướng đến các thông tin bổ trợ ở cuối trang.
+    -->
+    <footer>
+        <p>&copy; 2026 Trần Văn B. Tất cả các quyền được bảo lưu.</p>
+        <ul class="social-links">
+            <li><a href="https://linkedin.com/in/tranvanb" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/tranvanb" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
