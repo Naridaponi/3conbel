@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân | Frontend Developer</title>
+</head>
+<body>
+
+    <!-- 
+      <header>: Thẻ này đại diện cho phần tiêu đề của trang hoặc của một phần nội dung. 
+      Lý do sử dụng: Giúp trình duyệt và các công cụ hỗ trợ đọc (screen readers) nhận biết đây là khu vực chứa phần giới thiệu đầu trang hoặc thanh điều hướng chính, thay vì dùng <div> sẽ không mang ý nghĩa ngữ nghĩa nào, làm giảm khả năng tiếp cận (Accessibility) và SEO.
+    -->
+    <header>
+        <h1>Nguyễn Văn A</h1>
+        
+        <!-- 
+          <nav>: Thẻ này được sử dụng để chứa tập hợp các liên kết điều hướng chính của trang web.
+          Lý do sử dụng: Xác định rõ ràng khu vực nào dành cho việc điều hướng, giúp công cụ tìm kiếm và trình đọc màn hình dễ dàng tìm và cung cấp tính năng chuyển hướng nhanh cho người dùng khiếm thị, thay vì một <div> trống rỗng.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills-projects">Kỹ năng & Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+      <main>: Thẻ này đại diện cho nội dung chính, độc nhất của tài liệu. 
+      Lý do sử dụng: Đóng vai trò là điểm đánh dấu nội dung quan trọng nhất của trang. Chỉ nên có một thẻ <main> trên mỗi trang (không bị ẩn). Việc dùng <main> thay cho <div> giúp trình đọc màn hình cung cấp phím tắt để người dùng "nhảy" trực tiếp đến nội dung chính, bỏ qua header và sidebar lặp lại.
+    -->
+    <main>
+
+        <!-- 
+          <section>: Thẻ này đại diện cho một phần nội dung độc lập mang một chủ đề cụ thể, thường đi kèm với một tiêu đề.
+          Lý do sử dụng: Giúp phân chia trang thành các phần có cấu trúc logic rõ ràng. Khác với <div> (chỉ dùng để nhóm các phần tử cho mục đích CSS/JS), <section> thông báo cho trình duyệt biết đây là một nhóm nội dung có liên quan chặt chẽ về mặt ngữ nghĩa (ví dụ: phần giới thiệu).
+        -->
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào, tôi là một Frontend Developer đam mê tạo ra các trải nghiệm người dùng tuyệt vời trên web. Tôi luôn chú trọng vào việc viết mã sạch, tối ưu hiệu suất và đảm bảo tính khả dụng (Accessibility) cho mọi đối tượng. Mục tiêu nghề nghiệp của tôi là trở thành một Senior Frontend Engineer và đóng góp vào các sản phẩm mang lại giá trị thực cho cộng đồng.</p>
+        </section>
+
+        <!-- 
+          <section>: Sử dụng để gom nhóm chủ đề về Kỹ năng và Dự án.
+          Lý do sử dụng: Tương tự như trên, định hình một khối nội dung độc lập về chuyên môn, giúp phân tách với phần giới thiệu và liên hệ.
+        -->
+        <section id="skills-projects">
+            <h2>Kỹ năng cốt lõi & Dự án tiêu biểu</h2>
+            <h3>Kỹ năng</h3>
+            <ul>
+                <li>HTML5 / CSS3 (Semantic & Accessibility)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>ReactJS / VueJS</li>
+                <li>Responsive Web Design</li>
+            </ul>
+
+            <h3>Dự án tiêu biểu</h3>
+            <article>
+                <h4>Hệ thống quản lý bán hàng (E-commerce POS)</h4>
+                <p>Xây dựng giao diện người dùng cho hệ thống POS với ReactJS, tối ưu hóa tốc độ tải trang và đảm bảo trải nghiệm liền mạch trên các thiết bị máy tính bảng.</p>
+            </article>
+            <article>
+                <h4>Landing Page Bất động sản</h4>
+                <p>Thiết kế và lập trình trang đích bằng HTML5/CSS3 thuần, đạt điểm 100/100 trên Google Lighthouse về Accessibility và Performance.</p>
+            </article>
+        </section>
+
+        <!-- 
+          <section>: Sử dụng cho phần thông tin liên lạc và kêu gọi hành động.
+          Lý do sử dụng: Phân tách rõ ràng khu vực tương tác cuối cùng của người dùng với các phần nội dung hiển thị thông tin phía trên.
+        -->
+        <section id="contact">
+            <h2>Liên hệ với tôi</h2>
+            <p>Bạn đang tìm kiếm một Frontend Developer cho dự án sắp tới? Đừng ngần ngại liên hệ với tôi để cùng nhau trao đổi nhé!</p>
+            <button onclick="location.href='mailto:example@email.com'">Gửi Email Ngay</button>
+        </section>
+
+    </main>
+
+    <!-- 
+      <footer>: Thẻ này đại diện cho phần chân trang của một tài liệu hoặc một section.
+      Lý do sử dụng: Chứa các thông tin bổ sung như bản quyền, tác giả, liên kết liên quan, hoặc các kênh mạng xã hội. Việc dùng <footer> thay vì <div> giúp định danh rõ ràng ranh giới kết thúc của nội dung chính và cung cấp metadata cho trang web.
+    -->
+    <footer>
+        <p>&copy; 2026 Nguyễn Văn A. All rights reserved.</p>
+        <ul>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
