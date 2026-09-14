@@ -1,0 +1,202 @@
+/* =========================
+   CSS CHUNG
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #333;
+}
+
+
+/* =========================
+   HEADER
+   SỬ DỤNG FLEXBOX
+========================= */
+
+header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #1e3a8a;
+
+    color: white;
+}
+
+
+/* Tên */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+/* Menu */
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BỐ CỤC CHÍNH
+   SỬ DỤNG CSS GRID
+========================= */
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px
+                rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+
+    color: #1e3a8a;
+}
+
+
+/* =========================
+   KỸ NĂNG
+   SỬ DỤNG FLEXBOX
+========================= */
+
+.skills {
+    display: flex;
+
+    /* Cho phép xuống dòng */
+    flex-wrap: wrap;
+
+    /* Khoảng cách đồng nhất */
+    gap: 10px;
+}
+
+.skill {
+    padding: 10px 15px;
+
+    background-color: #dbeafe;
+
+    color: #1e3a8a;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   DỰ ÁN
+   SỬ DỤNG CSS GRID
+========================= */
+
+.projects {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.project {
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background-color: #fafafa;
+}
+
+
+/* =========================
+   FOOTER
+   SỬ DỤNG FLEXBOX
+========================= */
+
+footer {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #1e3a8a;
+
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    /* Grid chỉ còn 1 cột */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Project chỉ còn 1 cột */
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    /* Header chuyển thành chiều dọc */
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+}
