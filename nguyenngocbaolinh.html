@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio của Nguyễn Văn A - Senior Front-end Developer.">
+    <title>Portfolio | Nguyễn Văn A - Front-end Developer</title>
+</head>
+<body>
+
+    <!-- ===================================================================== -->
+    <!-- THẺ SEMANTIC: <header>                                                -->
+    <!-- VAI TRÒ: Là phần tiêu đề của trang hoặc một khu vực giới thiệu.       -->
+    <!-- SEO: Giúp công cụ tìm kiếm (Googlebot) nhanh chóng xác định tên       -->
+    <!--      thương hiệu, chủ thể của trang web ngay khi vừa crawl.           -->
+    <!-- ACCESSIBILITY: Trình đọc màn hình (Screen Reader) nhận dạng đây là    -->
+    <!--      'banner landmark', giúp người khiếm thị có thể dễ dàng định      -->
+    <!--      vị phần đầu trang và các công cụ điều hướng.                     -->
+    <!-- ===================================================================== -->
+    <header>
+        <h1>Nguyễn Văn A</h1>
+        <p>Senior Front-end Developer | Chuyên gia UI/UX</p>
+
+        <!-- ===================================================================== -->
+        <!-- THẺ SEMANTIC: <nav>                                                   -->
+        <!-- VAI TRÒ: Chứa các liên kết điều hướng chính của trang web.            -->
+        <!-- SEO: Giúp bot tìm kiếm hiểu được cấu trúc phân tầng và các luồng      -->
+        <!--      thông tin quan trọng nhất trên trang để lập chỉ mục.             -->
+        <!-- ACCESSIBILITY: Tạo ra 'navigation landmark'. Người dùng khiếm thị     -->
+        <!--      có thể sử dụng phím tắt để nhảy thẳng đến menu này để chuyển     -->
+        <!--      hướng mà không cần phải nghe đọc toàn bộ nội dung trang.         -->
+        <!-- ===================================================================== -->
+        <nav aria-label="Điều hướng chính">
+            <ul>
+                <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                <li><a href="#ky-nang">Kỹ năng</a></li>
+                <li><a href="#du-an">Dự án</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- THẺ SEMANTIC: <main>                                                  -->
+    <!-- VAI TRÒ: Bao bọc nội dung cốt lõi, duy nhất và quan trọng nhất trang. -->
+    <!-- SEO: Báo hiệu cho các Search Engine biết đâu là nội dung mang lại     -->
+    <!--      giá trị thực sự của trang (loại trừ header, footer, sidebar),    -->
+    <!--      giúp tăng thứ hạng từ khóa.                                      -->
+    <!-- ACCESSIBILITY: Định nghĩa 'main landmark'. Đây là điểm đến của tính   -->
+    <!--      năng "Skip to main content" (Bỏ qua để đến nội dung chính),      -->
+    <!--      giúp người dùng bàn phím tiết kiệm thời gian điều hướng.         -->
+    <!-- ===================================================================== -->
+    <main>
+
+        <!-- ===================================================================== -->
+        <!-- THẺ SEMANTIC: <section> (Phần Giới thiệu)                             -->
+        <!-- VAI TRÒ: Nhóm một phần nội dung có cùng chủ đề. Mỗi section nên       -->
+        <!--          có một thẻ heading (h2-h6) đi kèm để xác định ngữ nghĩa.     -->
+        <!-- SEO: Giúp chia nhỏ nội dung tài liệu thành các cụm logic. Công cụ     -->
+        <!--      tìm kiếm sẽ dựa vào các section để hiểu dàn ý của bài viết.      -->
+        <!-- ACCESSIBILITY: Khi được gán nhãn (thông qua heading), nó tạo ra một   -->
+        <!--      'region landmark', cho phép Screen Reader liệt kê thành mục lục  -->
+        <!--      để người dùng dễ dàng lướt qua.                                  -->
+        <!-- ===================================================================== -->
+        <section id="gioi-thieu">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào, tôi là Nguyễn Văn A. Tôi là một Senior Front-end Developer với hơn 5 năm kinh nghiệm trong việc xây dựng các ứng dụng web hiệu suất cao. Tôi đam mê việc tạo ra các trải nghiệm người dùng (UX) tuyệt vời và viết mã nguồn sạch, dễ bảo trì và chuẩn Semantic HTML.</p>
+        </section>
+
+        <!-- Phần Kỹ năng (Section) -->
+        <section id="ky-nang">
+            <h2>Kỹ năng nổi bật</h2>
+            <p>Dưới đây là các công cụ và công nghệ tôi sử dụng hàng ngày để làm việc:</p>
+            <ul>
+                <li>HTML5 (Semantic & Accessibility)</li>
+                <li>CSS3 (Flexbox, Grid, BEM)</li>
+                <li>JavaScript (ES6+) & TypeScript</li>
+                <li>React.js & Next.js</li>
+                <li>Figma & UI/UX Design</li>
+            </ul>
+        </section>
+
+        <!-- Phần Dự án (Section) -->
+        <section id="du-an">
+            <h2>Dự án mẫu</h2>
+            
+            <!-- ===================================================================== -->
+            <!-- THẺ SEMANTIC: <article>                                               -->
+            <!-- VAI TRÒ: Đại diện cho một thành phần nội dung hoàn chỉnh, độc lập     -->
+            <!--          và có thể tái sử dụng (như một bài blog, một thẻ dự án).     -->
+            <!-- SEO: Cho công cụ tìm kiếm biết đây là một thực thể thông tin độc lập, -->
+            <!--      có giá trị riêng, giúp việc trích xuất nội dung chính xác hơn.   -->
+            <!-- ACCESSIBILITY: Xác định ranh giới rõ ràng của một mục thông tin,      -->
+            <!--      giúp người dùng thiết bị hỗ trợ dễ dàng tập trung vào từng dự án.-->
+            <!-- ===================================================================== -->
+            <article>
+                <h3>Ứng dụng Quản lý Công việc (Task Manager)</h3>
+                <p>Một ứng dụng web giúp người dùng quản lý công việc hàng ngày với tính năng kéo thả (Drag and Drop), được xây dựng bằng React.js và Firebase.</p>
+                <a href="https://github.com/nguyenvana/task-manager">Xem mã nguồn (GitHub)</a> | 
+                <a href="https://task-manager-demo.com">Xem trực tiếp</a>
+            </article>
+
+            <article>
+                <h3>Giao diện E-commerce Đa nền tảng</h3>
+                <p>Thiết kế và phát triển giao diện cửa hàng trực tuyến chuẩn Responsive, tối ưu hóa tốc độ tải trang đạt 95+ điểm trên Google PageSpeed Insights.</p>
+                <a href="https://github.com/nguyenvana/ecommerce-ui">Xem mã nguồn (GitHub)</a> | 
+                <a href="https://ecommerce-demo.com">Xem trực tiếp</a>
+            </article>
+        </section>
+
+        <!-- Phần Liên hệ (Section) -->
+        <section id="lien-he">
+            <h2>Liên hệ với tôi</h2>
+            <p>Bạn có dự án thú vị hoặc muốn hợp tác? Hãy liên hệ với tôi qua các kênh dưới đây:</p>
+            
+            <!-- ===================================================================== -->
+            <!-- THẺ SEMANTIC: <address>                                               -->
+            <!-- VAI TRÒ: Chứa thông tin liên hệ của tác giả hoặc chủ sở hữu trang.    -->
+            <!-- SEO: Rất quan trọng cho Local SEO và E-E-A-T. Giúp Google bóc tách    -->
+            <!--      chính xác thông tin liên lạc (email, số điện thoại, địa chỉ).    -->
+            <!-- ACCESSIBILITY: Trình đọc màn hình sẽ đổi giọng điệu hoặc thông báo    -->
+            <!--      để người dùng biết họ đang nghe thông tin liên hệ.               -->
+            <!-- ===================================================================== -->
+            <address>
+                <ul>
+                    <li>Email: <a href="mailto:nguyenvana@example.com">nguyenvana@example.com</a></li>
+                    <li>Điện thoại: <a href="tel:+84123456789">+84 123 456 789</a></li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/nguyenvana">linkedin.com/in/nguyenvana</a></li>
+                    <li>GitHub: <a href="https://github.com/nguyenvana">github.com/nguyenvana</a></li>
+                </ul>
+            </address>
+        </section>
+
+    </main>
+
+    <!-- ===================================================================== -->
+    <!-- THẺ SEMANTIC: <footer>                                                -->
+    <!-- VAI TRÒ: Chân trang, thường chứa bản quyền, liên kết phụ, cảnh báo.   -->
+    <!-- SEO: Là nơi tốt để đặt các internal link (liên kết nội bộ) hỗ trợ     -->
+    <!--      bot crawl sâu hơn vào cấu trúc website.                          -->
+    <!-- ACCESSIBILITY: Tạo ra 'contentinfo landmark'. Cung cấp điểm dừng cuối -->
+    <!--      cùng để người dùng khiếm thị tìm kiếm thông tin về bản quyền     -->
+    <!--      hoặc các liên kết pháp lý (terms, privacy).                      -->
+    <!-- ===================================================================== -->
+    <footer>
+        <p>&copy; 2026 Nguyễn Văn A. Đã đăng ký bản quyền.</p>
+        <p>
+            Theo dõi tôi trên: 
+            <a href="https://twitter.com/nguyenvana">Twitter</a> | 
+            <a href="https://dribbble.com/nguyenvana">Dribbble</a>
+        </p>
+    </footer>
+
+</body>
+</html>
